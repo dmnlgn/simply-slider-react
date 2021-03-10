@@ -1,0 +1,69 @@
+button:focus {
+    outline: 0;
+}
+
+#Slider {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 3;
+    align-items: flex-end;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    grid-gap: 10px;
+    background-color: #0e0e0e;
+}
+
+.slider {
+    display: grid;
+    grid-template-rows: 90% 10%;
+    height: 100vh;
+    background-color: #151414;
+}
+
+#Slider::-webkit-scrollbar {
+    display: none;
+}
+
+.slider > img {
+    height: 100%;
+}
+
+.slider > div {
+    color: #c1c1c1;
+    align-items: center;
+    margin: auto;
+    display: grid;
+}
+
+.slider > div > header {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.button {
+    padding: 20px;
+    height: 100%;
+    position: absolute;
+    color: #fff4f4;
+    background: #0000009c;
+    border: 0;
+    opacity: 0;
+    top: 0;
+    transition-duration: 0.3s;
+}
+
+.button:hover {
+    opacity: 1;
+}
+
+.button.focus {
+    opacity: 1;
+}
+
+.button.left {
+    left: 0;
+}
+
+.button.right {
+    right: 0;
+}
